@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Ajay's Portfolio</title>
+    <link rel="icon" href="Image/Faviconlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+
+    <!-- home function -->
+    <div id="header">
+        <div class="container box">
+            <nav>
+                <img src="Image/Logo.png" class="logo" width="100px">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#photography">Photographs</a></li> -->
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+
+
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="setdiv  animate__animated animate__slideInUp">
+                    <h2>Hi, I'm <br></h2>
+                    <h1><span>Ajay Babu Kante</span></h1>
+                    <p>Student🧑‍💻 - Photographer📸 & Mobile Video Editor 📽✂</p>
+                    <div class="wrapper">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="notification"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1xvm9Xmv7qkHNUK1SVCPYqrtEm5eH5hYP/view?usp=drivesdk';">
+                <p>Would you like to check my CV ?😊</p>
+                <span class="notification__progress"></span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="Section-Home/main.js"></script>
+
+    <div id="progress">
+        <span id="progress-value" class="gotoTop">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+                height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1"
+                viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                    d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2  c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2  c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z" />
+            </svg>
+        </span>
+    </div>
+    <script src="Section-Home/Scroll-Top.js"></script>
+
+
+    <!-- about section -->
+    <div id="about">
+        <div class="containers box">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <div class="sub-line">
+                        <p>
+                            I am currently studying B.Tech -CSE(AIML) in Mohan Babu University in Tirupati.
+                            Besides, I am a <b>Student💻</b> with a passion for coding and
+                            problem solving.<br>
+                            I also love <b>Photography📸 and Mobile Video Editing📽✂</b> as a creative outlet and
+                            capturing
+                            the world around me.
+                        </p>
+                    </div>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('others')">Others</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Competitive Programing : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Cloud Practitioner Foundation : <br></span>
+                                <div class="space1">
+                                    <img src="">
+                                    <img
+                                        src="https://img.shields.io/badge/AWS%20Cloud-%237F52FF.svg?style=for-the-badge&logo=aws&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Geeks%20For%20Geeks-3DDC84.svg?style=for-the-badge&logo=geeksforgeeks&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Web Development : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                                </div>
+                            </li>
+                            <li><span>Photo Graphics & Video Editing : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white">
+                                    <!-- <img
+                                        src="https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?style=for-the-badge&logo=Adobe%20Lightroom&logoColor=white"> -->
+                                    <img
+                                        src="https://img.shields.io/badge/Capcut-%23F24E1E.svg?style=for-the-badge&logo=capcut&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span> Collaboration : <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="others">
+                        <ul>
+                            <li><span>Backend Technology: <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Node.js-3670A0?style=for-the-badge&logo=Node.js&logoColor=ffdd54">
+                                    <img
+                                        src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Database Management <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
+                                </div>
+                            </li>
+                            <li><span>Office Management <br></span>
+                                <div class="space1">
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_Word-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white"><br>
+                                    <img
+                                        src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white">
+                                    <img
+                                        src="https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="Education"><b>B.Tech in Computer Science & Engineering <br>Specialization
+                                        with Artifical Intelligence and Machine Learning</b> </span><br>
+
+                                <p>Mohan Babu University, Tirupati</p>
+                                <p align="left">2022 - Present <span class="cg">(CGPA - 8.9)</span> </p>
+
+
+                            </li><br>
+                            <li><span class="Education"><b>Intermediate</b> </span><br>
+
+                                <p>Sri Gayatri Junior College, Kadapa</p>
+                                <p align="left">2020 - 2022<span class="cgs">(Marks - 896)
+                                    </span> </p>
+
+
+                            </li><br>
+                            <li><span class="Education"><b>SSC</b> </span><br>
+
+                                <p>Balavikas English Medium High School, Kadapa </p>
+                                <p align="left">2020 <span class="cgs">(Marks - 579)</span> </p>
+
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="Education"><b>Looking For Intership Oppurtunity</b> </span><br>
+
+                                <p>Check Out My CV</p>
+                                <button class="button"
+                                    onclick="window.location.href = 'https://drive.google.com/file/d/1xvm9Xmv7qkHNUK1SVCPYqrtEm5eH5hYP/view?usp=drivesdk';">
+                                    <span class="button_lg">
+                                        <span class="button_sl"></span>
+                                        <span class="button_text">Download Now</span>
+                                    </span>
+                                </button>
+
+
+                            </li><br>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <img src="Image/aboutpic.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--  animation effect :IN about section : by clicking - move to next(skills to Other) -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <!-- about section -->
+
+
+
+
+    <!-- skills Section -->
+
+    <h1 class="h1s box">My Skills</h1>
+    <br>
+    <div class="process-wrapperd box">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">Frontend Development</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">Cloud & API</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">Language</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">Backend Developemt</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">Others</div>
+                </li>
+            </ul>
+
+            <div id="line">
+                <div id="line-progress"></div>
+            </div>
+        </div>
+
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+
+
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">HTML & CSS</div>
+                        </div>
+
+                        <div class="carded js">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">JavaScript</div>
+                        </div>
+                        <div class="carded react">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">React</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Frontend Web Developemt Skills</h2>
+            </div>
+
+            <div class="section-content strategy">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded cloud">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">AWS Cloud Foundation</div>
+                        </div>
+
+                        <div class="carded api">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">REST API</div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Cloud & API Skills</h2>
+            </div>
+
+            <div class="section-content creative">
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded cc">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">C</div>
+                        </div>
+
+                        <div class="carded java">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Java</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Programming Languages</h2>
+            </div>
+
+            <div class="section-content production">
+                <div class="skills">
+                    <div class="wrapperd">
+
+                        <div class="carded node">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">NodeJs</div>
+                        </div>
+
+                        <div class="carded sql">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">MySQL</div>
+                        </div>
+
+                        <div class="carded php">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">PHP</div>
+                        </div>
+
+                    </div>
+                </div>
+                <h2>Backend Web Developemt Skills</h2>
+            </div>
+
+            <div class="section-content analysis">
+
+                <div class="skills">
+
+                    <div class="wrapperd">
+                        <div class="carded git">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Git & GitHub</div>
+                        </div>
+
+                        <div class="carded edit">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Mobile Photo & Video Editing</div>
+                        </div>
+
+                        <div class="carded canva">
+                            <div class="circled">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                            <div class="text">Canva</div>
+                        </div>
+
+                    </div>
+                </div>
+                <h2>Designing and Collaboration Skills</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let optionse = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.95,
+            fill: { gradient: ["#526D82", "rgb(2, 6, 48)"] },
+        };
+        $(".circled .bar")
+            .circleProgress(optionse)
+            .on("circle-animation-progress", function (event, progress, stepValue) {
+                $(this)
+                    .parent()
+                    .find("span")
+                    .text(String(stepValue.toFixed(2).substr(2)) + "%");
+            });
+        $(".js .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".react .bar").circleProgress({
+            value: 0.62,
+        });
+        $(".cloud .bar").circleProgress({
+            value: 0.85,
+        });
+        $(".api .bar").circleProgress({
+            value: 0.74,
+        });
+        $(".cc .bar").circleProgress({
+            value: 0.75,
+        });
+        $(".java .bar").circleProgress({
+            value: 0.83,
+        });
+        $(".node .bar").circleProgress({
+            value: 0.80,
+        });
+        $(".sql .bar").circleProgress({
+            value: 0.55,
+        });
+        $(".php .bar").circleProgress({
+            value: 0.68,
+        });
+        $(".git .bar").circleProgress({
+            value: 0.93,
+        });
+        $(".canva .bar").circleProgress({
+            value: 0.89,
+        });
+        $(".edit .bar").circleProgress({
+            value: 0.86,
+        });
+    </script>
+
+
+    <!-- First script = jQuery core = unlocks $ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "2%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+
+    <!-- skill section -->
+
+
+
+    <!-- Projects section -->
+    <div id="projects">
+        <div class="containers box">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <div class="card" onclick="window.location.href = 'github link';">
+                        <div class="card9">
+                            <div class="position">
+                                <img align="center" class="icon" src="Image/Port.gif" width="190">
+                                <span class="p_hcolor">Portfolio</span>
+                                <p>
+                                    Personal Reponsive Portfolio Website of mine
+                                </p>
+                                <p>
+                                    <b><span class="p_color">Langauge :</span></b> HTML , CSS <br>
+                                    <b><span class="p_color">Framework :</span></b> Vanila JS <br>
+                                    <b><span class="p_color">Environment :</span></b> VS Code <br>
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" onclick="window.location.href = 'Github link';">
+                        <div class="card8">
+                            <div class="position">
+                                <img align="center" class="icon" src="Image/auto.gif" width="190">
+                                <span class="p_hcolor">CarRentWebsite</span>
+                                <p>
+                                    Website of Car Rental
+                                </p>
+                                <p>
+
+                                    <b><span class="p_color">Frontend :</span></b> JS , CSS , HTML<br>
+                                    <b><span class="p_color">Database :</span></b> MySQL , PHP<br>
+                                    <b><span class="p_color">Environment :</span></b> Visual Studio Studio
+
+                                </p>
+
+                                <p align="right"><i><span class="p_color">(Learn more)</span></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+
+
+
+
+
+    <!-- Photographs Section -->
+    <div id="projects">
+        <div id="photographs" class="box">
+            <h1 class="sub-project">Photography</h1>
+            <div class="pos_Set">
+                <div class="slider" onclick="window.location.href = 'https://www.instagram.com/_sumonta_saha_/';">
+                    <span style="--i:1;"><img class="scales" src="Image/1.jpg"></span>
+                    <span style="--i:2;"><img class="scales" src="Image/2.jpg"></span>
+                    <span style="--i:3;"><img class="scales" src="Image/3.jpg"></span>
+                    <span style="--i:4;"><img class="scales" src="Image/4.jpg"></span>
+                    <span style="--i:5;"><img class="scales" src="Image/5.jpg"></span>
+                    <span style="--i:6;"><img class="scales" src="Image/6.jpg"></span>
+                    <span style="--i:7;"><img class="scales" src="Image/7.jpg"></span>
+                    <span style="--i:8;"><img class="scales" src="Image/8.jpg"></span>
+                    <span style="--i:9;"><img class="scales" src="Image/9.jpg"></span>
+                    <span style="--i:10;"><img class="scales" src="Image/10.jpg"></span>
+                    <span style="--i:11;"><img class="scales" src="Image/11.jpg"></span>
+                    <span style="--i:12;"><img class="scales" src="Image/12.jpg"></span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Photographs Section -->
+
+    <!-- achivements section -->
+
+
+    <div id="Achievements" class="box">
+        <h1 class="sub-projects">Achievements</h1>
+        <div class="achievement1">
+            <div class="cards">
+                <div class="image-content">
+                    <span class="overlay">
+
+                    </span>
+
+                    <div class="card-image">
+                        <img src="Image/Xhorizon.jpg" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Xhorizon Hackathon-2025</h2>
+                    <p class="description">Participated in XHorizon Hackathon in Mohan Babu University
+                        2025, Department of AIML Organized a 24hours-Hackathon Powered by Codingclub in MBU <br>
+
+                        - Leader of the Team ( Team Agnatha ) <br>
+                        - Made a Technological AI-Bot(Soulful.AI)
+
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.linkedin.com/posts/ajaybabu-kante_firsthackathon-soulmateagi-xhorizon2025-activity-7317592328443944960-trTD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5VH24BWtZVvG2GJTjl1At_4vyfAxwbTDw';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards1">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="Image/IBM logo.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">IBM-Skillsbuild Internship</h2>
+                    <p class="description">Completed the "IBM SkillsBuild Summer Internship Program"with CSRBOX,
+                        focusing on Artificial Intelligence from 15th July 2024 to 5th August 2024.<br>
+                        - Learned the Basic Knowledge on AI Domain<br>
+                        - UniqueID : IBM5013
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.linkedin.com/posts/ajaybabu-kante_ibm-skillsbuild-artificialintelligence-activity-7304168259107344384-RhwX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE5VH24BWtZVvG2GJTjl1At_4vyfAxwbTDw';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="cards3">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="Image/leval_10.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Pearson MePro Level 10 Expert ✪ Badge</h2>
+
+                    <p class="description">
+                        I’ve achieved Level 10 (C2) in Me Pro,
+                        proving I can speak English fluently like a native.I can handle any conversation confidently
+                        with clear,
+                        connected, and professional communication.80 assessments 📜
+                        30 + hrs of learning.
+                    </p>
+
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.credly.com/badges/db7ff766-e3a5-4472-9a9d-defeaabb7448/public_url';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="achievement1">
+            <div class="card11">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="Image/AI Essentials.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Google AI Essentials</h2>
+                    <p class="description">I have completed Google AI Essentials, gaining practical skills to integrate
+                        generative AI into everyday work with clear,
+                        effective prompts and responsible usage. This includes evaluating tools, solving problems
+                        creatively, and understanding AI’s impact to use it wisely and ethically. <br>
+
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://www.credly.com/badges/24fdaeb5-029b-4eb6-abc9-2096218c19fe/public_url';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="card12">
+                <div class="image-content">
+                    <div class="card-image">
+                        <img src="Image/AICTE.png" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Certificate of AIML Virtual Internship</h2>
+                    <p class="description"> I successfully completed a 10-week AI-ML Virtual Internship under EduSkills
+                        and Google for Developers,
+                        gaining practical exposure to AI and machine learning concepts.
+                        This experience enhanced my skills in applying AI solutions to real-world problems with
+                        confidence and responsibility.
+
+
+                        <br>
+
+                    </p>
+                    <button class="button"
+                        onclick="window.location.href = 'https://drive.google.com/file/d/1YFuC6kvMaSIfT_WOaaoMORj0Bk2GNc-l/view?usp=drivesdk';">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">read more </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+           
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- achivements section -->
+
+   
+
+
+
+    <!-- contact me -->
+
+    <div id="contactme" class="box">
+        <section class="contact hidden">
+            <div class="contact-form">
+                <h1>Contact <span class="us">Me</spanc>
+                </h1>
+                <p>I am available for work. Connect with wih me via phone : 630070645 or
+                    email: ajaybabukante3699@gmail.com
+                </p>
+                <form action="https://formspree.io/f/mzzgonea" method="POST">
+                    <input type="name" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                    <input type="subject" placeholder="Write a Subject" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+
+            </div>
+            <div class="contact-img">
+                <img class="check" src="Image/side.jpg">
+            </div>
+        </section>
+    </div>
+
+    <!-- contact me -->
+
+
+    <div class="Social box">
+        <div class="wrappeer">
+            <div class="icon facebook"
+                onclick="window.location.href = 'https://www.facebook.com/profile.php?id=100021369772139';">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i> </span>
+            </div>
+            <div class="icon instagram" onclick="window.location.href = 'Old Insta Closed';">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i> </span>
+            </div>
+            <div class="icon twitter" onclick="window.location.href = 'Not yet Created';">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i> </span>
+            </div>
+            <div class="icon github" onclick="window.location.href = 'https://github.com/Ajay3699-editor';">
+                <div class="tooltip">GitHub</div>
+                <span><i class="fab fa-github"></i> </span>
+            </div>
+            <div class="icon linkedin" onclick="window.location.href = 'https://www.linkedin.com/in/ajaybabu-kante/';">
+                <div class="tooltip">Linkedin</div>
+                <span><i class="fab fa-linkedin"></i> </span>
+            </div>
+            <div class="icon youtube" onclick="window.location.href = 'youtube link';">
+                <div class="tooltip">YouTube</div>
+                <span><i class="fab fa-youtube"></i> </span>
+            </div>
+
+        </div>
+
+
+
+        <div class="cv box">
+            <button class="button"
+                onclick="window.location.href = 'https://drive.google.com/file/d/1xvm9Xmv7qkHNUK1SVCPYqrtEm5eH5hYP/view?usp=drivesdk';">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download My CV</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="follower box">
+        <div class="wrapperpp">
+            <div class="containerpp">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="num" data-val="657">000</span>
+                <span class="text">Instagram Followers</span>
+            </div>
+
+            <div class="containerpp">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span class="num" data-val="2500">000</span>
+                <span class="text">Facebook Followers</span>
+            </div>
+
+
+            <div class="containerpp ">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="num" data-val="240">000</span>
+                <span class="text">Linkedin Followers</span>
+            </div>
+            <!-- <div class="containerpp">
+                <i class="fa-brands fa-unsplash"></i>
+                <span class="num" data-val="2000">000</span>
+                <span class="text">Unplash Views</span>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script src="Section-Home/animation.js"></script>
+
+
+
+    <div class="end">
+        <p>© 2025 Ajay Babu Kante. All rights reserved.</p>
+    </div>
+    <!-- 
+    <script>
+
+        // Select all elements with the "box" class
+        const boxes = document.querySelectorAll('.box');
+
+        // Create a new Intersection Observer
+        const options = {
+            root: null, // use the viewport as the root
+            threshold: 0 // 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+
+
+
+
+                } else {
+                    entry.target.style.opacity = 0;
+
+
+                }
+            });
+        }, options);
+
+        // Start observing each target element
+        boxes.forEach(box => observer.observe(box));
+
+
+
+    </script> -->
+
+
+</body>
+
+</html>
